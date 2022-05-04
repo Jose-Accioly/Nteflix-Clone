@@ -1,0 +1,131 @@
+:root{
+    --vermelho:#FE0914;
+    --preto:#141414;
+    --branco:#fff;
+    --cinzalight:#ccc;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--preto);
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color:var(--cinzalight);
+}
+.filme-principal{
+    height: 1000px;
+    background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)100%), url("../midia/capa-house.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .logo img{
+    width: 150px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.container .menu-desktop nav{
+    margin-left:20px;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile select{
+    padding: 5px;
+    background-color: rgba(0, 0, 0,.50);
+    border: 0;
+    color:#fff;
+    border-radius: 15px;
+}
+
+.container .icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+}
+.container .icon .fa{
+    font-size: 22px;
+}
+.menu-desktop nav a{
+    margin-left: 10px;
+    font-size: 12pt;
+    text-decoration: none;
+    color:var(--cinzalight);
+}
+.menu-desktop nav a:hover{
+    color:var(--branco);
+    transition: 0.2s;
+}
+main{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+main .info-filme{
+   display: flex;
+   flex-direction: column;
+   width:400px;
+   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+   font-weight: bold;
+}
+.info-filme .titulo{
+    margin-top: 15%;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.info-filme .ranking{
+    font-size: 25px;
+}
+.info-filme .descricao{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.info-filme .botao{
+    display: flex;
+    margin-top:10px;
+}
+.botao button{
+    padding:10px;
+    border:1px solid #ccc;
+    background-color: rgba(0,0,0,.50);
+    color:#fff;
+    width: 50%;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao #btn-assistir{
+    background-color: rgba(255,255,255,.75);
+    color:#000;
+    font-weight: bold;
+}
+
+.corrosel-filmes{
+    width: 90%;
+    margin:-20px auto;
+    background-color: rgba(0,0,0,.20);
+}
+.corrosel-filmes .continue-assistindo{
+    font-size: 20px;
+    font-weight: bold;
+}
